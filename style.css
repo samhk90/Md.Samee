@@ -137,4 +137,71 @@ border-radius: 20px;
     border-radius: 20px;} 
 #projects{
     background-color:#1a1a1a;
+    height: 50%;
+    padding: 10px;
+    
+}
+#prow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#pcol{
+    display: flex;
+    justify-content: center;
+}
+.card1 {
+    box-sizing: border-box;
+    width: 390px;
+    height: 280px;
+    background: whitesmoke;
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+    flex-direction: column;
+    margin-right: 10px;
+  }
+  
+  .card1:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+    background-color: wheat;
+  }
+  
+  .card1:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+  }
+.picon{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+.topic{
+    font-size: 1.5rem;
+    color:black;
+    font-weight: bolder;
+}
+/* #iconr{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+} */
+#foot{
+    width: 100%;
+    height: 200px;
+    background-color: #1a1a1a;
+    color: white;
+    border: 2px solid wheat;
 }
