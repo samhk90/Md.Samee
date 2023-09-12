@@ -12,19 +12,68 @@ body::-webkit-scrollbar{
     height: 20px;
 }
 body::-webkit-scrollbar-thumb{
-    background: #1a1a1a;
     border-radius: 12px;
     transition: all 0.3s ease;
 }
+/* Add CSS for small screens (mobile) */
+@media (max-width: 768px) {
+    #nav .row .col {
+        display: none;
+        text-align: center;
+    }
+    #nav{
+
+    }
+    #toggleButton {
+        display: block;
+    }
+
+    #toggleButton img {
+        width: 30px; /* Adjust icon size as needed */
+        cursor: pointer;
+    }
+
+    #toggleButton img#hamburgerIcon {
+        display: inline;
+    }
+
+    #toggleButton img#crossIcon {
+        display: none;
+    }
+
+    #nav.collapsed .row .col {
+        display: block;
+    }
+
+    #nav.collapsed #toggleButton img#hamburgerIcon {
+        display: none;
+    }
+
+    #nav.collapsed #toggleButton img#crossIcon {
+        display: inline;
+    }
+}
+
+@media (min-width: 769px) {
+    #toggleButton {
+        display: none;
+    }
+}
+
+
 #nav{
     color: white;
-    background-color: #1a1a1ae7;
+    background-color: #1a1a1a;
     text-align: center;
     padding: 25px;
     border: 0;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content:center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
 }
 nav a{
     text-decoration: none;
@@ -56,20 +105,28 @@ nav a{
 }
 .button{
     margin: 3px;
-    background-color: #1a1a1a;
-    outline: 2px 2px soli white;
-    color: white;
+    background:transparent;
+    border: 2px  solid white;
+    color: wheat;
     height: 50px;
     width: 120px;
     font-size: 1.2rem;
-
+    border-radius: 50px;
     transition: all 0.8s ease-out  ;
 }
 .button:hover{
     background: transparent;
-    background-color: rgba(179, 0, 255, 0.688);
+    background-color: wheat;
+    color: black;
     border: 0;
-    border-radius: 50px;
+}
+.button a{
+    color: wheat;
+    font-weight: bolder;
+}
+.button:hover a{
+    color: #1a1a1a;
+    font-weight: bolder;
 }
 #aboutme{
     background-color: #1a1a1a;
@@ -83,61 +140,39 @@ nav a{
     outline: solid 2px white;
 }
 #skills{
-    background-color:  rgba(245, 222, 179, 0.909);
+    /* background-color:  rgba(245, 222, 179, 0.909); */
+    background-color: #1a1a1a;
+    color: wheat;
+}
+.topics{
+    padding: 10px;
 
 }
-
-* {box-sizing:border-box}
-.container {
-  width: 100%; /* Full width */
-  background-color: rgba(245, 222, 179, 0.909); /* Grey background */
+#ts{
+    border: solid 2px wheat;
+    border-top: 0;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
 }
-
-.skills {
-  text-align: right;
-  padding-right: 5px;
-  padding-top: 2px; 
-  padding-bottom: 2px; 
-  color: white;
-  font-size: 1.2rem;
-  height: 10%;
+.topics h4{
+    color: wheat;
+    font-size: 2rem;
+    padding-left:10px;
+    margin-bottom: 20px;
+    width: 90px;
+    border-bottom: solid 2px;
 }
-#skills p{
-    color: black;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    font-size: 1.3rem;
+.topics p{
+    color: wheat;
+    font-size: 0.8rem;
+    padding-left: 20px;
+    margin-left: 20px;
 }
-.html {width: 90%; background-color: #1a1a1a;
-height: 30px;
-border-radius: 20px;
-} /* Green */
-.css {width: 85%;
-    background-color: #1a1a1a;
-    height: 30px;
-    border-radius: 20px;
-} 
-.boot {width: 80%;
-    background-color: #1a1a1a;
-    height: 30px;
-    border-radius: 20px;
-} 
-.py {width: 85%;
-    background-color: #1a1a1a;
-    height: 30px;
-    border-radius: 20px;
-} 
-.js {width: 75%;
-    background-color: #1a1a1a;
-    height: 30px;
-    border-radius: 20px;}
-.php {width: 60%;
-    background-color: #1a1a1a;
-    height: 30px;
-    border-radius: 20px;} 
 #projects{
     background-color:#1a1a1a;
-    height: 50%;
+    height: 60%;
     padding: 10px;
     
 }
@@ -204,4 +239,5 @@ border-radius: 20px;
     background-color: #1a1a1a;
     color: white;
     border: 2px solid wheat;
+    
 }
