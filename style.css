@@ -2,7 +2,6 @@ body{
     overflow-x: hidden;
     background-color: black;
     height: 100vh;
-    width: 100vw;
     scroll-behavior: smooth;
     
 }
@@ -15,72 +14,33 @@ body::-webkit-scrollbar-thumb{
     border-radius: 12px;
     transition: all 0.3s ease;
 }
-/* Add CSS for small screens (mobile) */
-@media (max-width: 768px) {
-    #nav .row .col {
-        display: none;
-        text-align: center;
-    }
-    #nav{
+#navbar{
 
-    }
-    #toggleButton {
-        display: block;
-    }
-
-    #toggleButton img {
-        width: 30px; /* Adjust icon size as needed */
-        cursor: pointer;
-    }
-
-    #toggleButton img#hamburgerIcon {
-        display: inline;
-    }
-
-    #toggleButton img#crossIcon {
-        display: none;
-    }
-
-    #nav.collapsed .row .col {
-        display: block;
-    }
-
-    #nav.collapsed #toggleButton img#hamburgerIcon {
-        display: none;
-    }
-
-    #nav.collapsed #toggleButton img#crossIcon {
-        display: inline;
-    }
-}
-
-@media (min-width: 769px) {
-    #toggleButton {
-        display: none;
-    }
-}
-
-
-#nav{
-    color: white;
     background-color: #1a1a1a;
-    text-align: center;
-    padding: 25px;
-    border: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-}
-nav a{
-    text-decoration: none;
     color: white;
-    font-size: 1.2rem;
-    padding: 30px;
-    text-align: center;
+}
+#nava{
+    color: white;
+    margin-left: 50px;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+@media (min-width:769px) {
+    #navbar{
+        padding: 0;
+    }
+    #nava{
+        font-size:1.2rem;
+    }
+}
+#anav{
+    padding: 20px;
+    margin: 10px;
+    color: white;
+}
+#anav:hover{
+    color: wheat;
+    font-size: 1.3rem;
 }
 #banner{
     background-color: #1a1a1a;
@@ -206,6 +166,17 @@ nav a{
     flex-direction: column;
     margin-right: 10px;
   }
+@media screen and (max-width: 767px) {
+    .card1{
+       margin: 10px;
+
+    }
+    #projects{
+        height: 80%;
+        padding: 10px;
+        
+    }
+}
   
   .card1:hover {
     border: 1px solid black;
@@ -241,3 +212,130 @@ nav a{
     border: 2px solid wheat;
     
 }
+#contactbg {
+    background-color: #00275b;
+    padding: 5%;
+    border-radius: 10px;
+    color: white;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  form {
+    border: solid white 2px;
+    padding: 5%;
+    max-width: 700px;
+    margin: 50px auto;
+      border-radius: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border: 2px solid white;
+    border-radius: 20px;
+  }
+  
+  input[type="submit"] {
+    background-color: #013578;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    border: 2px solid white;
+  }
+  
+.card2 {
+    width: 350px;
+    height: 180px;
+    background-color:#1a1a1a;
+    transition: all 0.4s;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+    font-size: 30px;
+    font-weight: 900;
+  }
+  
+  .card2:hover {
+    border-radius: 15px;
+    cursor: pointer;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+     background: wheat; 
+  }
+  
+  .first-content2 {
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    border-radius: 15px;
+  }
+  /* @media screen and (max-width: 767px) {
+  
+    .first-content2 {
+      height: 50%;
+      width: 50%;
+    }
+  } */
+  .card2:hover .first-content2 {
+    height: 0px;
+    opacity: 0;
+  }
+  
+  .second-content2 {
+    color: black;
+    height: 0%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: all 0.4s;
+    font-size: 0px;
+    transform: rotate(90deg) scale(-1);
+    padding: 10px;
+  }
+  
+  .card2:hover .second-content2 {
+    opacity: 1;
+    height: 100%;
+    font-size: 1.2rem;
+    transform: rotate(0deg);
+  }
+  @media screen and (max-width: 767px) {
+  
+    .card2:hover {
+  
+      transform: scale(1.04);
+    }
+    .card2{
+      width: 90%;
+    }
+  }

@@ -12,21 +12,31 @@
 
 <body>
     <header>
-        <nav id="nav" class="navbar ">
-            <div class="row">
-                <div class="col">
-                    <a href="#banner">Home</a>
-                    <a href="#projects">Projects</a>
-                    <a href="contact.html">Contact Me</a>
-                </div>
-
+        <nav class="navbar navbar-expand-lg   " id="navbar">
+            <a class="navbar-brand" style="" id="nava" href="index.html">MD.Samee</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon bg-light"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto justifycontent-center">
+                <li class="nav-item active">
+                  <a class="nav-link" id="anav" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="anav" href="#aboutme">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="anav" href="#skills"> Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="anav" href="#projects">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="anav" href="contact.html">Contact Me</a>
+                  </li>
             </div>
-            <button class="navbar-toggler" type="button" id="toggleButton" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"
-            style="padding-left: 10px;">
-              <img src="img/hamburger.png" alt="Hamburger Icon" id="hamburgerIcon">
-              <img src="img/cross.png" alt="Cross Icon" id="crossIcon">
-          </button>
-        </nav>
+          </nav>
     </header>
     <div class="container-fluid" id="banner">
         <div class="row">
@@ -204,9 +214,9 @@
             </div>
             <div class="row" style="padding: 10px;">
                 <div class="col-sm-12 justify-content-center text-center" >
-                    <i><a href=""><img src="img/github.png" class="icon" width="3%" alt=""></a></i>
-                    <i><a href=""><img src="img/instagram.png" class="icon" width="3%" alt=""></a></i>
-                    <i><a href=""><img src="img/linkedin.png" class="icon" width="3%" alt=""></a></i>
+                    <i><a href="https://github.com/samhk90"><img src="img/github.png" class="icon" width="3%" alt=""></a></i>
+                    <i><a href="https://www.instagram.com/md_samii90/"><img src="img/instagram.png" class="icon" width="3%" alt=""></a></i>
+                    <i><a href="https://www.linkedin.com/in/samee-shaikh-3a3406220/"><img src="img/linkedin.png" class="icon" width="3%" alt=""></a></i>
                     <br><span style="text-align: center;margin-top:10px;">Follow Me On</span>
                 </div>
 
@@ -220,39 +230,6 @@
         </div>
     </footer>
     <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                const toggleButton = document.getElementById("toggleButton");
-                const navLinks = document.querySelector("#nav .row .col");
-                const hamburgerIcon = document.getElementById("hamburgerIcon");
-                const crossIcon = document.getElementById("crossIcon");
-        
-                // Function to toggle the navigation links
-                function toggleNav() {
-                    navLinks.classList.toggle("collapsed");
-                    hamburgerIcon.style.display = navLinks.classList.contains("collapsed") ? "inline" : "none";
-                    crossIcon.style.display = navLinks.classList.contains("collapsed") ? "none" : "inline";
-                }
-        
-                toggleButton.addEventListener("click", toggleNav);
-        
-                // Hide the cross icon initially
-                crossIcon.style.display = "none";
-        
-                // Check the screen width on page load and toggle the navigation accordingly
-                if (window.innerWidth <= 768) {
-                    toggleNav();
-                }
-        
-                // Check the screen width when the window is resized
-                window.addEventListener("resize", function () {
-                    if (window.innerWidth <= 768 && !navLinks.classList.contains("collapsed")) {
-                        toggleNav();
-                    } else if (window.innerWidth > 768 && navLinks.classList.contains("collapsed")) {
-                        toggleNav();
-                    }
-                });
-            });
-        
         const downloadButton = document.getElementById('getcv');
 
         downloadButton.addEventListener('click', () => {
@@ -281,9 +258,9 @@
             window.location.href=trageturl;
         });
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>
