@@ -19,6 +19,11 @@ body::-webkit-scrollbar-thumb{
     background-color: #1a1a1a;
     color: white;
 }
+.custom-toggler.navbar-toggler {
+  border-color: wheat;
+  color: wheat;
+  background-color: wheat;
+}
 #nava{
     color: white;
     margin-left: 50px;
@@ -213,7 +218,7 @@ body::-webkit-scrollbar-thumb{
     
 }
 #contactbg {
-    background-color: #00275b;
+    background-color: #1a1a1a;
     padding: 5%;
     border-radius: 10px;
     color: white;
@@ -257,8 +262,8 @@ body::-webkit-scrollbar-thumb{
   }
   
   input[type="submit"] {
-    background-color: #013578;
-    color: white;
+    background-color: wheat;
+    color: black;
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -283,6 +288,7 @@ body::-webkit-scrollbar-thumb{
     transform: scale(1.2);
     box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
      background: wheat; 
+
   }
   
   .first-content2 {
@@ -296,13 +302,12 @@ body::-webkit-scrollbar-thumb{
     opacity: 1;
     border-radius: 15px;
   }
-  /* @media screen and (max-width: 767px) {
-  
-    .first-content2 {
-      height: 50%;
-      width: 50%;
+  @media screen and (max-width: 767px) {
+    .card2:hover .second-content2{
+      font-size: 20px;
+      padding: 25px;
     }
-  } */
+  }
   .card2:hover .first-content2 {
     height: 0px;
     opacity: 0;
@@ -337,5 +342,6 @@ body::-webkit-scrollbar-thumb{
     }
     .card2{
       width: 90%;
+      font-size: 20px;
     }
   }
