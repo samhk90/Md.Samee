@@ -1,7 +1,6 @@
 body{
     overflow-x: hidden;
     background-color: black;
-    height: 100vh;
     scroll-behavior: smooth;
     
 }
@@ -211,7 +210,7 @@ body::-webkit-scrollbar-thumb{
 } */
 #foot{
     width: 100%;
-    height: 200px;
+    height: 220px;
     background-color: #1a1a1a;
     color: white;
     border: 2px solid wheat;
@@ -273,7 +272,7 @@ body::-webkit-scrollbar-thumb{
   
 .card2 {
     width: 350px;
-    height: 180px;
+    height: 200px;
     background-color:#1a1a1a;
     transition: all 0.4s;
     border-radius: 10px;
@@ -331,8 +330,9 @@ body::-webkit-scrollbar-thumb{
   .card2:hover .second-content2 {
     opacity: 1;
     height: 100%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     transform: rotate(0deg);
+    padding: 50px;
   }
   @media screen and (max-width: 767px) {
   
