@@ -119,7 +119,7 @@ body::-webkit-scrollbar-thumb{
     display: flex;
     justify-content: center;
     align-items:center ;
-<<<<<<< HEAD
+
 }
 .topics h4{
     color: wheat;
@@ -151,7 +151,6 @@ body::-webkit-scrollbar-thumb{
     padding-left: 20px;
     margin-left: 20px;
 }
->>>>>>> 7f2d8a1dce55044323bbf5df175ff31e6a5ff2f7
 #projects{
     background-color:#1a1a1a;
     height: 60%;
