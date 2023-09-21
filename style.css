@@ -1,8 +1,6 @@
 body{
     overflow-x: hidden;
     background-color: black;
-    height: 100vh;
-    width: 100vw;
     scroll-behavior: smooth;
     
 }
@@ -12,26 +10,41 @@ body::-webkit-scrollbar{
     height: 20px;
 }
 body::-webkit-scrollbar-thumb{
-    background: #1a1a1a;
     border-radius: 12px;
     transition: all 0.3s ease;
 }
-#nav{
+#navbar{
+
+    background-color: #1a1a1a;
     color: white;
-    background-color: #1a1a1ae7;
-    text-align: center;
-    padding: 25px;
-    border: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
 }
-nav a{
-    text-decoration: none;
+.custom-toggler.navbar-toggler {
+  border-color: wheat;
+  color: wheat;
+  background-color: wheat;
+}
+#nava{
     color: white;
-    font-size: 1.2rem;
-    padding: 30px;
-    text-align: center;
+    margin-left: 50px;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+@media (min-width:769px) {
+    #navbar{
+        padding: 0;
+    }
+    #nava{
+        font-size:1.2rem;
+    }
+}
+#anav{
+    padding: 20px;
+    margin: 10px;
+    color: white;
+}
+#anav:hover{
+    color: wheat;
+    font-size: 1.3rem;
 }
 #banner{
     background-color: #1a1a1a;
@@ -56,20 +69,28 @@ nav a{
 }
 .button{
     margin: 3px;
-    background-color: #1a1a1a;
-    outline: 2px 2px soli white;
-    color: white;
+    background:transparent;
+    border: 2px  solid white;
+    color: wheat;
     height: 50px;
     width: 120px;
     font-size: 1.2rem;
-
+    border-radius: 50px;
     transition: all 0.8s ease-out  ;
 }
 .button:hover{
     background: transparent;
-    background-color: rgba(179, 0, 255, 0.688);
+    background-color: wheat;
+    color: black;
     border: 0;
-    border-radius: 50px;
+}
+.button a{
+    color: wheat;
+    font-weight: bolder;
+}
+.button:hover a{
+    color: #1a1a1a;
+    font-weight: bolder;
 }
 #aboutme{
     background-color: #1a1a1a;
@@ -83,61 +104,39 @@ nav a{
     outline: solid 2px white;
 }
 #skills{
-    background-color:  rgba(245, 222, 179, 0.909);
+    /* background-color:  rgba(245, 222, 179, 0.909); */
+    background-color: #1a1a1a;
+    color: wheat;
+}
+.topics{
+    padding: 10px;
 
 }
+#ts{
+    border: solid 2px wheat;
+    border-top: 0;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+.topics h4{
+    color: wheat;
+    font-size: 2rem;
+    padding-left:10px;
+    margin-bottom: 5px;
+    width: 90px;
 
-* {box-sizing:border-box}
-.container {
-  width: 100%; /* Full width */
-  background-color: rgba(245, 222, 179, 0.909); /* Grey background */
 }
-
-.skills {
-  text-align: right;
-  padding-right: 5px;
-  padding-top: 2px; 
-  padding-bottom: 2px; 
-  color: white;
-  font-size: 1.2rem;
-  height: 10%;
+.topics p{
+    color: wheat;
+    font-size: 0.8rem;
+    padding-left: 20px;
+    margin-left: 80px;
 }
-#skills p{
-    color: black;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    font-size: 1.3rem;
-}
-.html {width: 90%; background-color: #1a1a1a;
-height: 30px;
-border-radius: 20px;
-} /* Green */
-.css {width: 85%;
-    background-color: #1a1a1a;
-    height: 30px;
-    border-radius: 20px;
-} 
-.boot {width: 80%;
-    background-color: #1a1a1a;
-    height: 30px;
-    border-radius: 20px;
-} 
-.py {width: 85%;
-    background-color: #1a1a1a;
-    height: 30px;
-    border-radius: 20px;
-} 
-.js {width: 75%;
-    background-color: #1a1a1a;
-    height: 30px;
-    border-radius: 20px;}
-.php {width: 60%;
-    background-color: #1a1a1a;
-    height: 30px;
-    border-radius: 20px;} 
 #projects{
     background-color:#1a1a1a;
-    height: 50%;
+    height: 60%;
     padding: 10px;
     
 }
@@ -171,6 +170,17 @@ border-radius: 20px;
     flex-direction: column;
     margin-right: 10px;
   }
+@media screen and (max-width: 767px) {
+    .card1{
+       margin: 10px;
+
+    }
+    #projects{
+        height: 80%;
+        padding: 10px;
+        
+    }
+}
   
   .card1:hover {
     border: 1px solid black;
@@ -200,8 +210,138 @@ border-radius: 20px;
 } */
 #foot{
     width: 100%;
-    height: 200px;
+    height: 220px;
     background-color: #1a1a1a;
     color: white;
     border: 2px solid wheat;
+    
 }
+#contactbg {
+    background-color: #1a1a1a;
+    padding: 5%;
+    border-radius: 10px;
+    color: white;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  form {
+    border: solid white 2px;
+    padding: 5%;
+    max-width: 700px;
+    margin: 50px auto;
+      border-radius: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border: 2px solid white;
+    border-radius: 20px;
+  }
+  
+  input[type="submit"] {
+    background-color: wheat;
+    color: black;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    border: 2px solid white;
+  }
+  
+.card2 {
+    width: 350px;
+    height: 200px;
+    background-color:#1a1a1a;
+    transition: all 0.4s;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+    font-size: 30px;
+    font-weight: 900;
+  }
+  
+  .card2:hover {
+    border-radius: 15px;
+    cursor: pointer;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+     background: wheat; 
+
+  }
+  
+  .first-content2 {
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    border-radius: 15px;
+  }
+  @media screen and (max-width: 767px) {
+    .card2:hover .second-content2{
+      font-size: 20px;
+      padding: 25px;
+    }
+  }
+  .card2:hover .first-content2 {
+    height: 0px;
+    opacity: 0;
+  }
+  
+  .second-content2 {
+    color: black;
+    height: 0%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: all 0.4s;
+    font-size: 0px;
+    transform: rotate(90deg) scale(-1);
+    padding: 10px;
+  }
+  
+  .card2:hover .second-content2 {
+    opacity: 1;
+    height: 100%;
+    font-size: 1rem;
+    transform: rotate(0deg);
+    padding: 50px;
+  }
+  @media screen and (max-width: 767px) {
+  
+    .card2:hover {
+  
+      transform: scale(1.04);
+    }
+    .card2{
+      width: 90%;
+      font-size: 20px;
+    }
+  }
