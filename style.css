@@ -29,7 +29,7 @@ body::-webkit-scrollbar-thumb{
 #nava{
     color: white;
     margin-left: 50px;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: bolder;
 }
 @media (min-width:769px) {
