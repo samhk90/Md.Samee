@@ -54,15 +54,16 @@ body::-webkit-scrollbar-thumb{
     color: white;
     margin: 0;
     width: 100%;
-    padding: 50px;
+    padding: 100px;
     display: flex;
+    height: 680px !important;
     justify-content: center;
     flex-direction: row;
 }
 
 .button{
 
-    margin: 3px;
+    margin: 5px;
     background:transparent;
     border: 2px  solid white;
     color: white;
@@ -74,7 +75,7 @@ body::-webkit-scrollbar-thumb{
 }
 .button:hover{
     background: transparent;
-    background-color: ff6b08;
+    background-color: wheat;
     color: black;
     border: 0;
     border-radius: 50px;
