@@ -14,12 +14,15 @@ body::-webkit-scrollbar-thumb{
     transition: all 0.3s ease;
 }
 #navbar{
-    position: fixed;
     top: 0;
     width: 100%;
-    background-color: #1a1a1a;
+    background-image: url("./img/banner.jpg");
     color: white;
     height: max-content;
+}
+.navbar-scrolled {
+  background-image: none !important;
+  background-color: #1a1a1a !important; /* Replace with your color */
 }
 .custom-toggler.navbar-toggler {
   border-color: wheat;
@@ -50,7 +53,7 @@ body::-webkit-scrollbar-thumb{
     font-size: 1.3rem;
 }
 #banner{
-    background-color: #1a1a1a;
+  background-image: url("./img/banner.jpg");
     color: white;
     margin: 0;
     width: 100%;

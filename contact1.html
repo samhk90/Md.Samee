@@ -152,6 +152,14 @@
 </footer>
 
   <script>
+    window.onscroll = function() {
+      const navbar = document.getElementById('navbar');
+      if (window.pageYOffset > 0) {
+          navbar.classList.add('navbar-scrolled');
+      } else {
+          navbar.classList.remove('navbar-scrolled');
+      }
+  };
     var button = document.querySelector('.navbar-toggler');
     button.addEventListener('click', function () {
         var target = document.querySelector(button.getAttribute('data-bs-target'));
