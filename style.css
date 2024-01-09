@@ -17,6 +17,8 @@ body::-webkit-scrollbar-thumb{
     top: 0;
     width: 100%;
     background-image: url("./img/banner.jpg");
+    background-repeat: no-repeat;
+    background-size:cover ;
     color: white;
     height: max-content;
 }
@@ -32,7 +34,7 @@ body::-webkit-scrollbar-thumb{
 #nava{
     color: white;
     margin-left: 50px;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: bolder;
 }
 @media (min-width:769px) {
@@ -50,10 +52,13 @@ body::-webkit-scrollbar-thumb{
 }
 #anav:hover{
     color: wheat;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 #banner{
   background-image: url("./img/banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
     color: white;
     margin: 0;
     width: 100%;
@@ -183,7 +188,14 @@ body::-webkit-scrollbar-thumb{
     margin-right: 10px;
   }
 @media screen and (max-width: 767px) {
-    .card1{
+  #banner{
+    padding: 10px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }  
+  .card1{
        margin: 10px;
 
     }
